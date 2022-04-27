@@ -1,0 +1,475 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
+html{
+    font-size: 62.5%;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    background-color: #B6C9F0;
+    color: #CE1212;
+}
+
+/*header styling starts here*/
+header{
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85rem;
+    width: 90%;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+.nav_brand h1{
+    font-size: 4rem;
+    color: rgb(255, 111, 0);
+    cursor: pointer;
+    font-family: 'Caveat', cursive;
+}
+.nav_brand h1:hover{
+    color: #f6b93b;
+}
+.navbar .nav{
+    margin: auto 0;
+}
+.navbar .nav a{
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(255, 0, 43);
+    text-transform: uppercase;
+}
+.navbar .nav a:hover{
+    color: #0015ff;
+}
+.navbar #menu-bar{
+    font-size: 2.5rem;
+    border: 0.5rem solid black;
+    border-radius: 15%;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    color: rgb(255, 245, 245);
+    display: none;
+}
+.jumbotron{
+    max-width: 85rem;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: 8rem;
+    position: relative;
+}
+.jumbotron .tagline{
+    font-size: 2.8rem;
+    width: 70%;
+    line-height: 5.4rem;
+    color: rgb(81, 255, 0);
+}
+.jumbotron .tag{
+    font-size: 1.8rem;
+    width: 70%;
+    margin: 2.3rem 0;
+    color: rgb(247, 243, 243);
+}
+.tag_btn{
+    display: inline-block;
+    width: 13rem;
+    height: 4.3rem;
+    text-align: center;
+    color: white;
+    padding: 1.3rem 0;
+    background-color: #55b7c4;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tag_btn:hover{
+    background-color: #fad962;
+    color: rgb(5, 5, 5);
+}
+.header .imgs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+.header .imgs input{
+    display: none;
+}
+.header .imgs img{
+    width: 100%;
+    height: 100%;
+}
+.header .jumbotron .radio_button{
+    display: flex;
+    position: absolute;
+    top: 65vh;
+    left: 40%;
+}
+.header .jumbotron .radio_button label{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.6rem solid rgb(223, 87, 37);
+    border-radius: 50%;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.header .jumbotron .radio_button label:hover{
+    transform: scale(2);
+    border: 0.6rem solid rgb(62, 145, 240);
+}
+
+hr{
+    border: 0.1rem solid rgba(116, 112, 112, 0.7);
+    max-width: 90rem;
+    width: 90%;
+    margin: 2.3rem auto;
+}
+/*Home styling starts here */
+.home{
+    max-width: 850px;
+    width: 90%;
+    margin: 0px auto;
+}
+.home h1{
+    font-size: 40px;
+    text-align: center;
+}
+.home .quote{
+    margin: 20px 0;
+}
+.quote .text{
+    float: left;
+    width: 70%;
+}
+.quote .text p{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+ .quote .home_icon{
+    float: right;
+    width: 30%;
+    height:30%;
+    text-align:end;
+}
+
+.quote .home_icon i{
+    font-size: 20rem;
+    color: #FF4F58FF;
+    margin-left: 2%;
+}
+.quote .home_icon i:hover{
+    color:rgb(57, 202, 238);
+}
+
+.home .quote::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.home .infro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.home .infro .infr{
+    text-align: center;
+}
+.home .infro .infr .icon{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-color: #669DB3FF;
+    margin: 1rem auto;
+    position: relative;
+    cursor: pointer;
+}
+.home .infro .infr .icon i{
+    font-size: 4.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(250, 248, 248);
+}
+.home .infro .infr h3{
+    font-size: 1.8rem;
+}
+.home .infro .infr p{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.About{
+    font-size: 50;
+}
+.home .infro .infr .home_btn{
+    display: inline-block;
+    width: 13rem;
+    height: 4.3rem;
+    text-align: center;
+    color: white;
+    padding: 1.3rem 0;
+    background-color: #D85A7FFF;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.home .infro .infr .home_btn:hover{
+      background-color: #fada66;
+      color:rgb(0, 0, 0)
+}
+
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+    padding: 4rem 0;
+  }
+
+/* Team styling starts here*/
+.div_team{
+    max-width: 85rem;
+    width: 90%;
+    margin: 3.5rem auto;
+}
+.div_team h1{
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+.div_team .team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .team .mbr{
+    position: relative;
+    text-align: center;
+}
+.team .mbr img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100px;
+    margin: 1rem 3rem;
+    cursor: pointer;
+    position: relative;
+}
+.team .mbr .lnk{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.team .mbr .lnk i{
+    margin: 0 1.5rem;
+    display: none;
+    color: rgb(255, 255, 255);
+}
+.team .mbr h2{
+    font-size: 2rem;
+}
+.team .mbr h3{
+    color: rgba(7, 7, 7, 0.76);
+    font-size: 1.5rem;
+}
+.team .mbr img:hover ~ .lnk i,.team .mbr img:hover{
+    display: inline;
+    filter: saturate(0%);
+}
+
+
+
+.map_contact{
+    width: 100%;
+    height: 80vh;
+    /* margin-top: 50px; */
+}
+.map_contact img{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.map_contact .form{
+    float: right;
+    width: 50%; 
+    height: 100%;
+    text-align: center;
+    background-image:url('image/bg.jpg');
+}
+.map_contact .form h1{
+    font-size: 25px;
+}
+.map_contact .form input,.map_contact .form label,.map_contact .form textarea{
+        display: block;
+        margin: 0.1rem auto;
+        width: 30%;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: start;
+        border: 2px solid red;
+        outline: none;
+}
+
+.map_contact .form::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.map_contact .form input,.map_contact .form label{
+    height: 25px;
+}
+.map_contact .form .submit_btn{
+    text-align: center;
+    width:50%;
+    height: 45px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    background-color: rgb(50, 167, 175);
+    border: none;
+    outline: none;
+}
+.map_contact .form .submit_btn:hover{
+    background-color: rgb(88, 32, 88);
+}
+.footer{
+    text-align: center;
+    max-width: 85rem;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .info h1{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.footer .info p{
+    font-size: 13px;
+}
+.footer .info .social_icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15%;
+}
+.footer .info .social_icons i{
+    margin: 0.1rem;
+    cursor: pointer;
+}
+.fa-linkedin{
+    color:#0077b5;
+}
+.fa-instagram-square{
+    color:#cd486b;
+}
+.fa-facebook{
+    color: #1a86c0;
+}
+.fa-twitter-square{
+    color:#1DA1f2;
+}
+.fa-github{
+    color:#d37373;
+}
+.fa-discord{
+    color:#7d69d4;
+}
+
+.end_footer{
+    text-align:center;
+    background-color: grey;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.end_footer .prio h1{
+    padding: .5rem auto;
+    margin-top: 2rem;
+}
+
+@media(max-width:620px){
+    html{
+        font-size: 40%;
+    }
+    .header .navbar #menu-bar{
+        display: initial;
+    }
+    .header .navbar .nav{
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        background-color: #FFED99;
+        padding: 0.5rem 0.5rem;
+        border: 3px solid black;
+        display: none;
+    }
+    .header .navbar .nav a{
+        font-size: 1.6rem;
+        width: 10rem;
+        text-align: center;
+        background-color: #0A81AB;
+        padding: 0.7rem;
+        margin: 1rem auto;
+        position: relative;
+        border: 2px solid black;
+    }
+    .header .navbar .nav .active{
+        display: initial;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .jumbotron{
+        position: relative;
+        top: 5rem;
+    }
+    .home .quote .text,.home .quote .simg{
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+    .home .quote .home_icon{
+        display: none;
+    }
+    .home .infro{
+        flex-wrap: wrap;
+    }
+    
+    /* .map_contact img{
+        float: none;
+        width: 100%; 
+        height:20%;
+        margin: 0 auto;
+    }
+    .map_contact .form{
+        float: none;
+        width: 100%; 
+        text-align: center;
+        background-color: #47cbff;
+        height: 80%;
+    }
+} */
+}
